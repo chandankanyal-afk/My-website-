@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chandra Shekhar Singh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#1B2229;
+    --panel:#222B33;
+    --line:#3A4753;
+    --ink:#EDEFEF;
+    --ink-dim:#A9B4BC;
+    --trail:#C98A3E;
+    --trail-2:#5E8B7E;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  a{color:inherit;}
+
+  /* Elevation line motif — signature element */
+  .contour{
+    position:fixed;
+    top:0; left:0; width:100%; height:100%;
+    z-index:0; pointer-events:none;
+    opacity:0.10;
+  }
+
+  .wrap{
+    position:relative;
+    z-index:1;
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  header{
+    padding:90px 0 40px;
+    text-align:center;
+  }
+  .eyebrow{
+    font-size:13px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--trail);
+    font-weight:600;
+    margin-bottom:18px;
+  }
+  .photo{
+    width:150px; height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid var(--line);
+    margin:0 auto 28px;
+    display:block;
+  }
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-size:clamp(34px, 6vw, 52px);
+    letter-spacing:-0.01em;
+  }
+  .role{
+    color:var(--ink-dim);
+    font-size:17px;
+    margin-top:10px;
+  }
+
+  section{
+    padding:44px 0;
+    border-top:1px solid var(--line);
+  }
+  .label{
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--trail-2);
+    font-weight:600;
+    margin-bottom:16px;
+  }
+  .bio p{
+    font-size:18px;
+    color:var(--ink);
+    max-width:640px;
+  }
+
+  .interests{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+  }
+  .chip{
+    background:var(--panel);
+    border:1px solid var(--line);
+    padding:10px 18px;
+    border-radius:100px;
+    font-size:15px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .chip svg{width:16px; height:16px; stroke:var(--trail);}
+
+  .contact-row{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    font-size:17px;
+  }
+  .contact-row svg{width:20px; height:20px; stroke:var(--trail); flex-shrink:0;}
+  .contact-row a{
+    text-decoration:none;
+    border-bottom:1px solid var(--line);
+    padding-bottom:2px;
+    transition:border-color 0.2s;
+  }
+  .contact-row a:hover{border-color:var(--trail);}
+
+  footer{
+    text-align:center;
+    padding:50px 0 70px;
+    color:var(--ink-dim);
+    font-size:13px;
+  }
+
+  @media (max-width:480px){
+    header{padding:60px 0 30px;}
+    .photo{width:120px; height:120px;}
+  }
+</style>
+</head>
+<body>
+
+<svg class="contour" viewBox="0 0 1000 1400" preserveAspectRatio="xMidYMid slice">
+  <path d="M -50 200 Q 150 100, 350 220 T 750 180 T 1100 260" stroke="#C98A3E" stroke-width="2" fill="none"/>
+  <path d="M -50 320 Q 200 260, 400 350 T 800 300 T 1100 380" stroke="#5E8B7E" stroke-width="2" fill="none"/>
+  <path d="M -50 900 Q 180 800, 380 920 T 780 860 T 1100 940" stroke="#C98A3E" stroke-width="2" fill="none"/>
+  <path d="M -50 1050 Q 220 980, 420 1080 T 820 1020 T 1100 1100" stroke="#5E8B7E" stroke-width="2" fill="none"/>
+  <path d="M -50 1200 Q 200 1140, 400 1230 T 800 1170 T 1100 1250" stroke="#3A4753" stroke-width="2" fill="none"/>
+</svg>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Welcome</div>
+    <img src="images/profile.jpg" alt="Chandra Shekhar Singh" class="photo">
+    <h1>Chandra Shekhar Singh</h1>
+    <div class="role">IT Manager — India IT Operations</div>
+  </header>
+
+  <section class="bio">
+    <div class="label">About</div>
+    <p>I'm an IT professional working with a leading corporate organization as an IT Manager, overseeing India IT operations. Outside of work, I like to trade the office for open roads and trails.</p>
+  </section>
+
+  <section>
+    <div class="label">Interests</div>
+    <div class="interests">
+      <div class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="17" r="3"></circle><circle cx="19" cy="17" r="3"></circle><path d="M12 6l-3 11h6l3-8"></path><circle cx="12" cy="6" r="1.5" fill="#C98A3E" stroke="none"></circle></svg>
+        Cycling
+      </div>
+      <div class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l5-14 3 6 2-4 6 12"></path></svg>
+        Hiking
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">Get in touch</div>
+    <div class="contact-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><path d="M22 6l-10 7L2 6"></path></svg>
+      <a href="mailto:chandan.kanyal@gmail.com">chandan.kanyal@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Chandra Shekhar Singh
+  </footer>
+
+</div>
+
+</body>
+</html>
